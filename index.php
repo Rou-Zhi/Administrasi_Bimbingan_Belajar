@@ -1,3 +1,7 @@
+<?php
+include "connection.php";
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -56,7 +60,9 @@
             <?php 
             $menu = isset($_GET['menu'])?$_GET['menu']:"";
             if($menu == "") { include "dashboard-index.php"; }
-            if($menu == "users") { include "users-index.php"; }
+            else if($menu == "mapel") { include "App/Mapel/mapel-index.php"; }
+            else if($menu == "jadwal") { include "App/Jadwal/jadwal-index.php"; }
+            else if($menu == "pengajar") { include "App/Pe-index.php"; }
             ?>
 
             <!-- Footer Start -->
