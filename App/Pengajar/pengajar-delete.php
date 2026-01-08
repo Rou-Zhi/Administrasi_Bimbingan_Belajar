@@ -10,7 +10,7 @@ if($row == 1) {
     $pesan = "Data pengajar berhasil dihapus";
     $location = "location='../../index.php?menu=pengajar';";
 } else {
-    $pesan = "Maaf mapel tidak ditemukan";
+    $pesan = "Maaf pengajar tidak ditemukan";
     $location = "history.back();";
 }
 ?>

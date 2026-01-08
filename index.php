@@ -13,7 +13,6 @@ include "connection.php";
     <meta content="" name="description">
 
     <!-- Favicon -->
-    <link href="img/favicon.ico" rel="icon">
 
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -62,7 +61,9 @@ include "connection.php";
             if($menu == "") { include "dashboard-index.php"; }
             else if($menu == "mapel") { include "App/Mapel/mapel-index.php"; }
             else if($menu == "jadwal") { include "App/Jadwal/jadwal-index.php"; }
-            else if($menu == "pengajar") { include "App/Pe-index.php"; }
+            else if($menu == "pengajar") { include "App/Pengajar/pengajar-index.php"; }
+            else if($menu == "murid") { include "App/Murid/murid-index.php"; }
+            else if($menu == "absensi") { include "App/Absensi/absensi-index.php"; }
             ?>
 
             <!-- Footer Start -->

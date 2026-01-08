@@ -4,6 +4,8 @@
     if($menu == "mapel") { $m[2] = "active"; } 
     if($menu == "jadwal") { $m[3] = "active"; } 
     if($menu == "pengajar") { $m[4] = "active"; } 
+    if($menu == "murid") { $m[5] = "active"; } 
+    if($menu == "absensi") { $m[6] = "active"; } 
 ?>
 
 
@@ -25,11 +27,15 @@
                 <div class="navbar-nav w-100">
                     <a href="index.php" class="nav-item nav-link <?=$m[1];?>"><i class="fa fa-home me-2"></i>Dashboard</a>
 
-                    <a href="index.php?menu=mapel" class="nav-item nav-link <?=$m[2];?>"><i class="fa fa-book me-2"></i>Mapel</a>
+                    <a href="index.php?menu=mapel" class="nav-item nav-link <?=$m[2];?>"><i class="fa fa-book me-2"></i>Mata Pelajaran</a>
 
                     <a href="index.php?menu=jadwal" class="nav-item nav-link <?=$m[3];?>"><i class="fa fa-clipboard-list me-2"></i>Jadwal</a>
                     
                     <a href="index.php?menu=pengajar" class="nav-item nav-link <?=$m[4];?>"><i class="fa fa-users-cog me-2"></i>Pengajar</a>
+
+                    <a href="index.php?menu=murid" class="nav-item nav-link <?=$m[5];?>"><i class="fa fa-users-cog me-2"></i>Murid</a>
+
+                    <a href="index.php?menu=absensi" class="nav-item nav-link <?=$m[6];?>"><i class="fa fa-users-cog me-2"></i>Absensi</a>
                     
                     <a href="#" class="nav-item nav-link" id="signout"><i class="fa fa-sign-out-alt me-2"></i>Sign Out</a>
                     <?php /*
