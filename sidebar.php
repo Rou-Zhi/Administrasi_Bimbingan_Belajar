@@ -6,6 +6,8 @@
     if($menu == "pengajar") { $m[4] = "active"; } 
     if($menu == "murid") { $m[5] = "active"; } 
     if($menu == "absensi") { $m[6] = "active"; } 
+    if($menu == "spp") { $m[7] = "active"; } 
+    if($menu == "laporan") { $m[8] = "active"; } 
 ?>
 
 
@@ -31,11 +33,15 @@
 
                     <a href="index.php?menu=jadwal" class="nav-item nav-link <?=$m[3];?>"><i class="fa fa-clipboard-list me-2"></i>Jadwal</a>
                     
-                    <a href="index.php?menu=pengajar" class="nav-item nav-link <?=$m[4];?>"><i class="fa fa-users-cog me-2"></i>Pengajar</a>
+                    <a href="index.php?menu=pengajar" class="nav-item nav-link <?=$m[4];?>"><i class="fa fa-fas fa-chalkboard-teacher me-2"></i>Pengajar</a>
 
                     <a href="index.php?menu=murid" class="nav-item nav-link <?=$m[5];?>"><i class="fa fa-users-cog me-2"></i>Murid</a>
 
-                    <a href="index.php?menu=absensi" class="nav-item nav-link <?=$m[6];?>"><i class="fa fa-users-cog me-2"></i>Absensi</a>
+                    <a href="index.php?menu=absensi" class="nav-item nav-link <?=$m[6];?>"><i class="fas fa-calendar-alt me-2"></i>Absensi</a>
+
+                    <a href="index.php?menu=spp" class="nav-item nav-link <?=$m[7];?>"><i class="fa fa-users-cog me-2"></i>SPP</a>
+
+                    <a href="index.php?menu=laporan" class="nav-item nav-link <?=$m[8];?>"><i class="fa fa-users-cog me-2"></i>Laporan</a>
                     
                     <a href="#" class="nav-item nav-link" id="signout"><i class="fa fa-sign-out-alt me-2"></i>Sign Out</a>
                     <?php /*

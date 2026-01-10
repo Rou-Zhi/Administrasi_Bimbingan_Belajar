@@ -8,10 +8,10 @@ $jadwalQuery = mysqli_query($connect, "
         pengajar.nama_pengajar,
         mapel.kode_mapel,
         mapel.nama_mapel
-    FROM jadwal
-    JOIN pengajar ON jadwal.kode_pengajar = pengajar.kode_pengajar
-    JOIN mapel    ON jadwal.kode_mapel = mapel.kode_mapel
-    ORDER BY FIELD(jadwal.hari,'Senin','Selasa','Rabu','Kamis','Jumat','Sabtu','Minggu'), jadwal.jam
+        FROM jadwal
+        JOIN pengajar ON jadwal.kode_pengajar = pengajar.kode_pengajar
+        JOIN mapel ON jadwal.kode_mapel = mapel.kode_mapel
+        ORDER BY FIELD(jadwal.hari,'Senin','Selasa','Rabu','Kamis','Jumat','Sabtu','Minggu'), jadwal.jam
 ");
 ?>
 

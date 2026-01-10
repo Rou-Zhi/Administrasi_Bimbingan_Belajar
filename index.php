@@ -64,6 +64,8 @@ include "connection.php";
             else if($menu == "pengajar") { include "App/Pengajar/pengajar-index.php"; }
             else if($menu == "murid") { include "App/Murid/murid-index.php"; }
             else if($menu == "absensi") { include "App/Absensi/absensi-index.php"; }
+            else if($menu == "spp") { include "App/SPP/spp-index.php"; }
+            else if($menu == "laporan") { include "App/Laporan/laporan-read.php"; }
             ?>
 
             <!-- Footer Start -->

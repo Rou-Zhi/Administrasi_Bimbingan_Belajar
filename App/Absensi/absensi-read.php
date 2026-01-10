@@ -38,7 +38,7 @@ $no = 1;
             <form method="get" class="d-flex align-items-center">
                 <input type="hidden" name="menu" value="absensi">
                 <input type="hidden" name="aksi" value="read">
-                <input type="date" name="tanggal" class="form-control form-control-sm me-2" style="width: 150px;
+                <input type="date" name="tanggal" class="form-control form-control-sm me-2" style="width: 150px";
                     value="<?= $_GET['tanggal'] ?? '' ?>" required>
                 <button type="submit" class="btn btn-sm btn-primary">
                     <i class="fa fa-calendar me-1"></i> Tampilkan
