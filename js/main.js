@@ -59,7 +59,7 @@
     });
 
 
-    // Worldwide Sales Chart
+    // Worldwide Sales Chart=
     var ctx1 = $("#worldwide-sales").get(0).getContext("2d");
     var myChart1 = new Chart(ctx1, {
         type: "bar",
@@ -87,31 +87,40 @@
         }
     });
 
-
     // Salse & Revenue Chart
-    var ctx2 = $("#salse-revenue").get(0).getContext("2d");
-    var myChart2 = new Chart(ctx2, {
-        type: "line",
-        data: {
-            labels: ["2016", "2017", "2018", "2019", "2020", "2021", "2022"],
-            datasets: [{
-                    label: "Salse",
-                    data: [15, 30, 55, 45, 70, 65, 85],
-                    backgroundColor: "rgba(0, 156, 255, .5)",
-                    fill: true
+    function loadSalseRevenueChart() {
+    fetch('chart-data.php')
+        .then(res => res.json())
+        .then(data => {
+            var ctx2 = document.getElementById("salse-revenue").getContext("2d");
+
+            if(window.salseRevenueChart) window.salseRevenueChart.destroy();
+
+            window.salseRevenueChart = new Chart(ctx2, {
+                type: "line",
+                data: {
+                    labels: data.labels,
+                    datasets: [
+                        {
+                            label: "Pendapatan",
+                            data: data.pendapatan,
+                            backgroundColor: "rgba(0, 156, 255, .3)",
+                            fill: true
+                        },
+                        {
+                            label: "Pengeluaran",
+                            data: data.pengeluaran,
+                            backgroundColor: "rgba(0, 156, 255, .5)",
+                            fill: true
+                        }
+                    ]
                 },
-                {
-                    label: "Revenue",
-                    data: [99, 135, 170, 130, 190, 180, 270],
-                    backgroundColor: "rgba(0, 156, 255, .3)",
-                    fill: true
-                }
-            ]
-            },
-        options: {
-            responsive: true
-        }
-    });
+                options: { responsive: true }
+            });
+        });
+    }
+
+    loadSalseRevenueChart();
     
 
 

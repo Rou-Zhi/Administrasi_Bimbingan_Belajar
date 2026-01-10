@@ -39,9 +39,9 @@
 
                     <a href="index.php?menu=absensi" class="nav-item nav-link <?=$m[6];?>"><i class="fas fa-calendar-alt me-2"></i>Absensi</a>
 
-                    <a href="index.php?menu=spp" class="nav-item nav-link <?=$m[7];?>"><i class="fa fa-users-cog me-2"></i>SPP</a>
+                    <a href="index.php?menu=spp" class="nav-item nav-link <?=$m[7];?>"><i class="fas fa-money-bill-wave me-2"></i>SPP</a>
 
-                    <a href="index.php?menu=laporan" class="nav-item nav-link <?=$m[8];?>"><i class="fa fa-users-cog me-2"></i>Laporan</a>
+                    <a href="index.php?menu=laporan" class="nav-item nav-link <?=$m[8];?>"><i class="fas fa-file-alt me-2"></i>Laporan</a>
                     
                     <a href="#" class="nav-item nav-link" id="signout"><i class="fa fa-sign-out-alt me-2"></i>Sign Out</a>
                     <?php /*

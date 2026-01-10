@@ -66,6 +66,10 @@ $saldo = $totalPendapatan - $totalPengeluaran;
 
 <div class="container-fluid px-4">
     <div class="bg-light rounded p-4">
+        <div class="d-flex justify-content-between mb-4">
+            <h6 class="mb-0">Laporan Pengeluaran dan Pendapatan</h6>
+        </div>
+    
         <form method="get" action="index.php" class="d-flex align-items-center mb-3">
             <input type="hidden" name="menu" value="laporan">
             <input type="hidden" name="aksi" value="read">
@@ -97,7 +101,7 @@ $saldo = $totalPendapatan - $totalPengeluaran;
 
             <tbody>
                 <tr class="table-success fw-bold text-center">
-                    <td colspan="5">PENDAPATAN</td>
+                    <td colspan="5">Pendapatan</td>
                 </tr>
 
                 <?php $no=1; while($s = mysqli_fetch_assoc($qPendapatan)): ?>
@@ -111,7 +115,7 @@ $saldo = $totalPendapatan - $totalPengeluaran;
                 <?php endwhile; ?>
                 
                 <tr class="fw-bold table-success">
-                    <td colspan="3" class="text-center">TOTAL PENDAPATAN</td>
+                    <td colspan="3" class="text-center">Total Pendapatan</td>
                     <td class="text-end">Rp <?= number_format($totalPendapatan,0,',','.') ?></td>
                     <td class="text-center"></td>
                 </tr>
@@ -119,7 +123,7 @@ $saldo = $totalPendapatan - $totalPengeluaran;
                 <tr><td colspan="5"></td></tr>
 
                 <tr class="table-danger fw-bold text-center">
-                    <td colspan="5">PENGELUARAN</td>
+                    <td colspan="5">Pengeluaran</td>
                 </tr>
 
                 <?php $no=1; while($p = mysqli_fetch_assoc($qPengeluaran)): ?>
@@ -133,7 +137,7 @@ $saldo = $totalPendapatan - $totalPengeluaran;
                 <?php endwhile; ?>
                 
                 <tr class="fw-bold table-danger">
-                    <td colspan="3" class="text-center">TOTAL PENGELUARAN</td>
+                    <td colspan="3" class="text-center">Total Pengeluaran</td>
                     <td class="text-center"></td>
                     <td class="text-end">Rp <?= number_format($totalPengeluaran,0,',','.') ?></td>
                 </tr>
