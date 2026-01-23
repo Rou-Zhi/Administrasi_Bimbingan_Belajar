@@ -8,6 +8,7 @@
     if($menu == "absensi") { $m[6] = "active"; } 
     if($menu == "spp") { $m[7] = "active"; } 
     if($menu == "laporan") { $m[8] = "active"; } 
+    if($menu == "admin") { $m[9] = "active"; } 
 ?>
 
 
@@ -22,12 +23,14 @@
                         <div class="bg-success rounded-circle border border-2 border-white position-absolute end-0 bottom-0 p-1"></div>
                     </div>
                     <div class="ms-3">
-                        <h6 class="mb-0">Jhon Doe</h6>
+                        <h6 class="mb-0">Geady</h6>
                         <span>Admin</span>
                     </div>
                 </div>
                 <div class="navbar-nav w-100">
                     <a href="index.php" class="nav-item nav-link <?=$m[1];?>"><i class="fa fa-home me-2"></i>Dashboard</a>
+
+                    <a href="index.php?menu=admin" class="nav-item nav-link <?=$m[9];?>"><i class="fa fa-users-cog me-2"></i>Admin</a>
 
                     <a href="index.php?menu=mapel" class="nav-item nav-link <?=$m[2];?>"><i class="fa fa-book me-2"></i>Mata Pelajaran</a>
 

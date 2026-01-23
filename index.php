@@ -59,6 +59,7 @@ include "connection.php";
             <?php 
             $menu = isset($_GET['menu'])?$_GET['menu']:"";
             if($menu == "") { include "dashboard-index.php"; }
+            else if($menu == "admin") { include "App/Admin/admin-index.php"; }
             else if($menu == "mapel") { include "App/Mapel/mapel-index.php"; }
             else if($menu == "jadwal") { include "App/Jadwal/jadwal-index.php"; }
             else if($menu == "pengajar") { include "App/Pengajar/pengajar-index.php"; }

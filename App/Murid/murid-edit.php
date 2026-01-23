@@ -54,7 +54,7 @@ if(!$data){
                 <button type="submit" class="btn btn-primary">
                     <i class="fa fa-save me-1"></i> Update
                 </button>
-                <a href="index.php?menu=pengajar" class="btn btn-secondary">
+                <a href="index.php?menu=murid" class="btn btn-secondary">
                     Kembali
                 </a>
             </div>
